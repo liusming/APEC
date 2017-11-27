@@ -1,0 +1,6 @@
+[25-Nov-2017 11:22:01 Asia/Taipei] RuntimeException: Failed to start the session because headers have already been sent by "/home/apecorg/public_html/vendor/symfony/http-foundation/Response.php" at line 1217. in /home/apecorg/public_html/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php on line 135 #0 /home/apecorg/public_html/core/lib/Drupal/Core/Session/SessionManager.php(163): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#1 /home/apecorg/public_html/core/lib/Drupal/Core/Session/SessionManager.php(194): Drupal\Core\Session\SessionManager->startNow()
+#2 /home/apecorg/public_html/vendor/symfony/http-foundation/Session/Session.php(181): Drupal\Core\Session\SessionManager->save()
+#3 /home/apecorg/public_html/core/includes/install.core.inc(146): Symfony\Component\HttpFoundation\Session\Session->save()
+#4 /home/apecorg/public_html/core/install.php(44): install_drupal(Object(Composer\Autoload\ClassLoader))
+#5 {main}
